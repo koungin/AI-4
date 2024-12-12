@@ -9,8 +9,8 @@ import gdown
 file_id = '1WqZu3SULybgCaLwBaXIkO_x04GkmI5Us'
 
 # Google Drive에서 파일 다운로드 함수
-#@st.cache(allow_output_mutation=True)
-st.cache_data
+@st.cache(allow_output_mutation=True)
+#st.cache_data
 
 def load_model_from_drive(file_id):
     url = f'https://drive.google.com/uc?id={file_id}'
@@ -124,7 +124,7 @@ content_data = {
             "https://www.youtube.com/watch?v=3JZ_D3ELwOQ"
         ],
         'texts': [
-            "Label 3 관련 첫 번째 텍스트 내용입니다.",
+            "삼백일의 낭군님은 없나요",
             "Label 3 관련 두 번째 텍스트 내용입니다.",
             "Label 3 관련 세 번째 텍스트 내용입니다."
         ]
