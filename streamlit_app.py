@@ -57,9 +57,9 @@ def display_right_content(prediction, data):
             st.write(data['texts'][i])
 
 # 모델 로드
-st.write("모델을 로드 중입니다. 잠시만 기다려주세요...")
+st.write("관련 정보를 찾고 있어요... 잠시만 기다려주세요...")
 learner = load_model_from_drive(file_id)
-st.success("모델이 성공적으로 로드되었습니다!")
+st.success("관련 정보를 찾았어요!")
 
 labels = learner.dls.vocab
 
@@ -80,51 +80,51 @@ st.markdown("""
 content_data = {
     labels[0]: {
         'images': [
-            "https://via.placeholder.com/300?text=Label1_Image1",
+            "https://img.cjnews.cj.net/wp-content/uploads/2021/08/tvN%EA%B0%AF%EB%A7%88%EC%9D%84%EC%B0%A8%EC%B0%A8%EC%B0%A8_12_%EB%A9%94%EC%9D%B8%ED%8F%AC%EC%8A%A4%ED%84%B0%EA%B3%B5%EA%B0%9C-725x1024.jpg",
             "https://via.placeholder.com/300?text=Label1_Image2",
             "https://via.placeholder.com/300?text=Label1_Image3"
         ],
         'videos': [
-            "https://www.youtube.com/watch?v=3JZ_D3ELwOQ",
+            "https://www.youtube.com/watch?v=wMuIIU66udM&list=PLaw_8D5aLtDiwKE011fRa6HSK98LZupo_",
             "https://www.youtube.com/watch?v=2Vv-BfVoq4g",
             "https://www.youtube.com/watch?v=3JZ_D3ELwOQ"
         ],
         'texts': [
-            "Label 1 관련 첫 번째 텍스트 내용입니다.",
+            "소나기 없는 인생이 어딨겠어.-두식",
             "Label 1 관련 두 번째 텍스트 내용입니다.",
             "Label 1 관련 세 번째 텍스트 내용입니다."
         ]
     },
     labels[1]: {
         'images': [
-            "https://via.placeholder.com/300?text=Label2_Image1",
+            "https://th.bing.com/th/id/R.660eed9ebedff0818132f6423e764527?rik=bCS5XtVCkzuTaw&riu=http%3a%2f%2fcdn.ggilbo.com%2fnews%2fphoto%2f202001%2f740746_575617_5420.jpg&ehk=OwZpgmLGhWhTiSratUe8ELLG8UKZxY8BpVD7LYtRjnY%3d&risl=&pid=ImgRaw&r=0",
             "https://via.placeholder.com/300?text=Label2_Image2",
             "https://via.placeholder.com/300?text=Label2_Image3"
         ],
         'videos': [
-            "https://www.youtube.com/watch?v=2Vv-BfVoq4g",
+            "https://www.youtube.com/watch?v=Q5DITF2ZXLw",
             "https://www.youtube.com/watch?v=3JZ_D3ELwOQ",
             "https://www.youtube.com/watch?v=2Vv-BfVoq4g"
         ],
         'texts': [
-            "Label 2 관련 첫 번째 텍스트 내용입니다.",
+            "오래오래 따뜻하고 싶어요.-동백",
             "Label 2 관련 두 번째 텍스트 내용입니다.",
             "Label 2 관련 세 번째 텍스트 내용입니다."
         ]
     },
     labels[2]: {
         'images': [
-            "https://via.placeholder.com/300?text=Label3_Image1",
+            "https://i.pinimg.com/originals/5f/8d/2d/5f8d2d8a5941b5726363311b0d954559.jpg",
             "https://via.placeholder.com/300?text=Label3_Image2",
             "https://via.placeholder.com/300?text=Label3_Image3"
         ],
         'videos': [
-            "https://www.youtube.com/watch?v=3JZ_D3ELwOQ",
+            "https://www.youtube.com/watch?v=bs7JXCmz3j8",
             "https://www.youtube.com/watch?v=2Vv-BfVoq4g",
             "https://www.youtube.com/watch?v=3JZ_D3ELwOQ"
         ],
         'texts': [
-            "삼백일의 낭군님은 없나요",
+            "너의 낭군으로 살았던 그 백일 간은 내게 모든 순간이 기적이었다.-이율",
             "Label 3 관련 두 번째 텍스트 내용입니다.",
             "Label 3 관련 세 번째 텍스트 내용입니다."
         ]
